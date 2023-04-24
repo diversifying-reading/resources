@@ -34,21 +34,21 @@ function mobileDevice() {
 function selectTopnavUpdate(){
   var link = document.getElementsByClassName("select")[0].value;
   if(link == "Catalog"){
-    window.location.href = "https://diversifying-reading.github.io/search";
+    window.location.href = "https://diversifying-reading.github.io/search/";
   }
   else if(link == "Resources"){
-    window.location.href = "https://diversifying-reading.github.io/diversifyingreadingslcpl/resources";
+    window.location.href = "https://diversifying-reading.github.io/diversifyingreadingslcpl/resources/";
   }
   else if(link == "Suggest"){
-    window.location.href = "https://diversifying-reading.github.io/diversifyingreadingslcpl/suggest";
+    window.location.href = "https://diversifying-reading.github.io/diversifyingreadingslcpl/suggest/";
   }
   else if(link == "Home"){
-    window.location.href = "https://diversifying-reading.github.io/home";
+    window.location.href = "https://diversifying-reading.github.io/home/";
   }
 }
 
 function resize_topnav(){
-  let options = ["Home", "Catalog", "Resources", "Suggest a Book"];
+  let options = ["Resources", "Home", "Catalog", "Suggest a Book"];
 
   let optionsFormatted = "";
 
@@ -74,7 +74,7 @@ function resize_topnav(){
     document.getElementsByClassName("topnav_text")[0].style.paddingLeft = "14px";
     document.getElementsByClassName("topnav_text")[0].style.width = "";
 
-    document.getElementsByClassName("topnav_text")[0].innerHTML = '\n  <a href="https://diversifying-reading.github.io/diversifying-reading-slcpl" class="topnav_text_links" style="position:fixed; left:0px; padding-top: 8px; padding-bottom: 8px;">Home</a>\n  <a href="https://diversifying-reading.github.io/suggest" class="topnav_text_links" style="float: right; padding-top: 8px; padding-bottom: 8px;">Suggest a Book</a>\n  <a href="https://diversifying-reading.github.io/resources" class="currentTextLink" style="float: right; padding-top: 8px; padding-bottom: 8px;">Resources</a>\n  <a href="https://diversifying-reading.github.io/search/" class="topnav_text_links" style="float: right; padding-top: 8px; padding-bottom: 8px;">Catalog</a>\n  ';
+    document.getElementsByClassName("topnav_text")[0].innerHTML = '\n  <a href="https://diversifying-reading.github.io/home/" class="topnav_text_links" style="position:fixed; left:0px; padding-top: 8px; padding-bottom: 8px;">Home</a>\n  <a href="https://diversifying-reading.github.io/suggest/" class="topnav_text_links" style="float: right; padding-top: 8px; padding-bottom: 8px;">Suggest a Book</a>\n  <a href="https://diversifying-reading.github.io/resources/" class="currentTextLink" style="float: right; padding-top: 8px; padding-bottom: 8px;">Resources</a>\n  <a href="https://diversifying-reading.github.io/search/" class="topnav_text_links" style="float: right; padding-top: 8px; padding-bottom: 8px;">Catalog</a>\n  ';
     document.getElementsByClassName('topnav_text')[0].style.marginLeft = "1vmin";
 
     scroll_function();
