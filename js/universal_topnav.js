@@ -1,5 +1,5 @@
-var window_url = "https://diversifying-reading.github.io/home/?search=undefined";
-var repository = window_url.split("https://diversifying-reading.github.io/")[1].split("/")[0];
+var window_url = "https://resources.diversereading.com";
+var repository = "resources";
 var scrollOnLoad = document.documentElement.scrollTop;
 var screenWidth = window.innerWidth;
 if(mobileDevice()){
@@ -34,16 +34,16 @@ function mobileDevice() {
 function selectTopnavUpdate(){
   var link = document.getElementsByClassName("select")[0].value;
   if(link == "Catalog"){
-    window.location.href = "https://diversifying-reading.github.io/search/";
+    window.location.href = "https://search.diversereading.com";
   }
   else if(link == "Resources"){
-    window.location.href = "https://diversifying-reading.github.io/resources/";
+    window.location.href = "https://resources.diversereading.com";
   }
   else if(link == "Suggest a Book"){
-    window.location.href = "https://diversifying-reading.github.io/suggest/";
+    window.location.href = "https://suggest.diversereading.com";
   }
   else if(link == "Home"){
-    window.location.href = "https://diversifying-reading.github.io/home/";
+    window.location.href = "https://diversereading.com";
   }
 }
 
